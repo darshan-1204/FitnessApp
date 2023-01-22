@@ -22,6 +22,7 @@ public class HIstory extends AppCompatActivity {
             public void onClick(View view) {
 
                 Intent intent = new Intent(HIstory.this,ProfilePage.class);
+                finish();
                 startActivity(intent);
             }
         });

@@ -6,12 +6,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class ThirdPage extends AppCompatActivity {
 
-    TextView yourName,connect,today,quads,pushup,sideplank,situps;
+    TextView yourName;
     ImageView setting;
+
+    LinearLayout today_workout,quads,connect,pushup,sideplank,situps;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,12 +22,12 @@ public class ThirdPage extends AppCompatActivity {
 
         yourName = findViewById(R.id.yourName);
         connect = findViewById(R.id.connect);
-        today = findViewById(R.id.today);
         setting = findViewById(R.id.setting);
         quads = findViewById(R.id.quads);
         pushup = findViewById(R.id.pushup);
         sideplank = findViewById(R.id.sideplank);
         situps = findViewById(R.id.situps);
+        today_workout = findViewById(R.id.today_workout);
 
         String Name = getIntent().getStringExtra("Name");
         yourName.setText(Name);
@@ -38,7 +41,7 @@ public class ThirdPage extends AppCompatActivity {
             }
         });
 
-        today.setOnClickListener(new View.OnClickListener() {
+        today_workout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 

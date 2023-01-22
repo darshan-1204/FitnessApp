@@ -22,6 +22,7 @@ public class WorkoutCompleted extends AppCompatActivity {
             public void onClick(View view) {
 
                 Intent intent = new Intent(WorkoutCompleted.this,ThirdPage.class);
+                finish();
                 startActivity(intent);
             }
         });

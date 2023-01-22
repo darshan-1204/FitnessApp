@@ -15,7 +15,7 @@ public class Quads extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quads);
 
-        pull_up = findViewById(R.id.tv_pull_up);
+        pull_up = findViewById(R.id.pull_up);
 
         pull_up.setOnClickListener(new View.OnClickListener() {
             @Override

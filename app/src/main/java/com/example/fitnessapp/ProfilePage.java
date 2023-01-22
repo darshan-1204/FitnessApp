@@ -22,6 +22,7 @@ public class ProfilePage extends AppCompatActivity {
             public void onClick(View view) {
 
                 Intent intent = new Intent(ProfilePage.this,HIstory.class);
+                finish();
                 startActivity(intent);
             }
         });

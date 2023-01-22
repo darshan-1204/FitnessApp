@@ -24,6 +24,7 @@ public class ConnectDevice extends AppCompatActivity {
 
                 Toast.makeText(ConnectDevice.this,"Connect Successfully",Toast.LENGTH_SHORT);
                 Intent intent = new Intent(ConnectDevice.this,ThirdPage.class);
+                finish();
                 startActivity(intent);
             }
         });
