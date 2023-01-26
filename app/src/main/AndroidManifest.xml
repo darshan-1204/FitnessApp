@@ -23,9 +23,6 @@
             android:name=".PushupRouting"
             android:exported="false" />
         <activity
-            android:name=".HIstory"
-            android:exported="false" />
-        <activity
             android:name=".Quads"
             android:exported="false" />
         <activity
